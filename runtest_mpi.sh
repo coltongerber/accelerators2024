@@ -15,6 +15,7 @@ module load compilers/gcc/9.3.1
 module load mpi/openmpi/gcc-cuda/4.1.2
 module load libs/mkl/2021.1
 conda activate my_env
+source quick..rc
 
 export DO_PARALLEL='srun --export ALL -J runtest_mpi -n 36'
 echo "running job"
